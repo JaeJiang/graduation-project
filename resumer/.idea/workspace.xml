@@ -29,7 +29,7 @@
       <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3740458">
+            <state vertical-scroll-proportion="-0.4427481">
               <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
               <folding />
             </state>
@@ -99,8 +99,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="583" />
-    <option name="y" value="74" />
+    <option name="x" value="581" />
+    <option name="y" value="73" />
     <option name="width" value="692" />
     <option name="height" value="647" />
   </component>
@@ -230,7 +230,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="583" y="74" width="692" height="647" extended-state="0" />
+    <frame x="581" y="73" width="692" height="647" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08092485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -359,7 +359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3740458">
+        <state vertical-scroll-proportion="-0.4427481">
           <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding />
         </state>
