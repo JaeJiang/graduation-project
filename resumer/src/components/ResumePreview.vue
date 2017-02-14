@@ -12,6 +12,6 @@
 
 <style>
 	#resumePreview{
-		color: white;
+		color: black;
 	}
 </style>
