@@ -48,7 +48,7 @@
       display: flex;
       justify-content: space-between;
       padding: 0 16px;
-      width: 100%; /* 试试不加这句会怎样 */
+      width: 100%;
       align-self: center;
     }
   }
