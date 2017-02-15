@@ -45,12 +45,12 @@
             { field: 'contacts', icon: 'phone' },
           ],
           profile: {
-            name: '',
-            city: '',
-            title: ''
+            name: 'Josh',
+            city: 'shanghai',
+            title: 'BEST '
           },
           'work history': [
-            { company: 'AL', content: '我的第二份工作是' },
+            { company: '爸爸', content: '我的第二份工作是' },
             { company: 'TX', content: '我的第一份工作是' },
           ],
           education: [
@@ -66,8 +66,8 @@
             { name: 'awards B', content: '文字' },
           ],
           contacts: [
-            { contact: 'phone', content: '13812345678' },
-            { contact: 'qq', content: '12345678' },
+            { contact: 'phone', content: '18817818001' },
+            { contact: 'qq', content: '928139808' },
           ],
         }
       }
