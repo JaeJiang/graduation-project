@@ -5,10 +5,14 @@
     	body{
     		background-color: #BFE8E7;
     	}
+		
 		#app{			
 			padding-top: 200px;
 			width: 600px;
 			margin: 0 auto;
+		}
+		.logo{
+			background-color: #F76472;
 		}
     	.new-todo{
     		width: 100%;
@@ -21,7 +25,7 @@
 		.todos{
 			font-size: 28px;
 			color: white;
-
+			width:530px;
 			
 		}
 		.todos li{
@@ -50,16 +54,16 @@
 		.right{
 			float: right;
 		}
-		.createdTime{
-			width: 150px;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		    display: inline-block;
-    		vertical-align: bottom;
-    		font-size: 15px;
-		}
-		.completed{
-			color: #d9d9d9;
+		/*.createdTime{*/
+			/*width: 150px;*/
+			/*overflow: hidden;*/
+			/*text-overflow: ellipsis;*/
+		    /*display: inline-block;*/
+    		/*vertical-align: bottom;*/
+    		/*font-size: 15px;*/
+		/*}*/
+		/*.completed{*/
+			/*color: #d9d9d9;*/
     text-decoration: line-through;
     	}
     	.done{
@@ -72,16 +76,17 @@
   </head>
   <body>
   	<div id="app">
+		<!--<h1 class="logo">Todo</h1>-->
   		<div class="newTask">
   			<input type="text" v-model="newTodo" @keypress.enter="addTodo" placeholder="what's you gonna do ?" class="new-todo" >
   		</div>
   		<ol class="todos">
   			<li v-for= "todo in todoList"> 
-  			<input type="checkbox" v-model="todo.done" class="checkbox"> {{ todo.title }}	
-  			<span v-if="todo.done" class="right done">Killed</span>
+  			<input type="checkbox" v-model="todo.done" class="checkbox"> {{ todo.title }}
+				<button @click="removeTodo(todo)" class="btn right">x</button>
+				<span v-if="todo.done" class="right done">Killed</span>
 			<span v-else class="right alive">Alive</span>
-			<button @click="removeTodo(todo)" class="btn right">x</button>
-			<span class="createdTime right">{{todo.createdAt}}</span>
+
   			</li>		
   		</ol>
   	</div>  

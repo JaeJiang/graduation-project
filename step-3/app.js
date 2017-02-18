@@ -9,6 +9,9 @@ var app = new Vue({
 	},
 
 	created:function(){
+
+
+
 		window.onbeforeunload = ()=>{
 			let dataString = JSON.stringify(this.todoList)
 			window.localStorage.setItem('myTodos',dataString)
@@ -23,10 +26,14 @@ var app = new Vue({
 
 
 	methods:{
+
 		addTodo: function(){
+			var date = new Date();
+			var time = date.getFullYear() + "年" + (date.getMonth()+1) + "月" + date.getDate() + "日" + date.getHours() + "时";
+
 			this.todoList.push({
 				title: this.newTodo,
-				createdAt: new Date(),
+				createdAt: time,
 				done:false
 			})
 			this.newTodo = ''
@@ -35,9 +42,26 @@ var app = new Vue({
 		removeTodo:function(todo){
 			let index = this.todoList.indexOf(todo)
 			this.todoList.splice(index,1)
-		}
+		},
+
+
+
+		//getTime: function (t) {
+		//	function setT(t) {
+		//		return t < 10 ? '0' + t : t;
+		//	}
+        //
+		//	t = t.length == 10 ? t + '000' : t;
+		//	let time = new Date(Number(t));
+		//	let year   = time.getFullYear(),
+		//		month  = time.getMonth() + 1,
+		//		date   = time.getDate(),
+		//		Hour   = time.getHours(),
+		//		Second = time.getSeconds(),
+		//		Minu   = time.getMinutes();
+		//	return year + '-' + setT(month) + '-' + setT(date) + ' ' + setT(Hour) + ':' + setT(Minu) + ':' + setT(Second);
+		//}
 	}
 		
 })
 
-bar();

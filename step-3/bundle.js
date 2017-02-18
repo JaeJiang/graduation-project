@@ -77,10 +77,14 @@
 		},
 
 		methods: {
+
 			addTodo: function addTodo() {
+				var date = new Date();
+				var time = date.getFullYear() + "年" + (date.getMonth() + 1) + "月" + date.getDate() + "日" + date.getHours() + "时";
+
 				this.todoList.push({
 					title: this.newTodo,
-					createdAt: new Date(),
+					createdAt: time,
 					done: false
 				});
 				this.newTodo = '';
@@ -90,11 +94,10 @@
 				var index = this.todoList.indexOf(todo);
 				this.todoList.splice(index, 1);
 			}
+
 		}
 
 	});
-
-	(0, _bar2.default)();
 
 /***/ },
 /* 1 */
