@@ -45,11 +45,20 @@
 			clear: both;
 		}
 		.btn{
-			float: right;
-			border: none;
-			color: red;
-			font-size: 20px;
-			background-color: rgba(0, 0, 0, 0);
+			/*float: right;
+			border: none;*/
+			color: #f76472;
+			font-size: 12px;
+			/*background-color: rgba(0, 0, 0, 0);*/
+			border: 2px solid #d196b7;
+		    width: 45px;
+		    height: 28px;
+		    margin-right: -6px;
+		    text-align: center;
+		    line-height: 20px;
+		    border-radius: 14px;
+		    margin-left: 11px;
+		    background: #fab646;
 		}
 		.right{
 			float: right;
@@ -83,7 +92,7 @@
   		<ol class="todos">
   			<li v-for= "todo in todoList"> 
   			<input type="checkbox" v-model="todo.done" class="checkbox"> {{ todo.title }}
-				<button @click="removeTodo(todo)" class="btn right">x</button>
+				<button @click="removeTodo(todo)" class="btn right">删除</button>
 				<span v-if="todo.done" class="right done">Killed</span>
 			<span v-else class="right alive">Alive</span>
 
